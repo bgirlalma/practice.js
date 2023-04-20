@@ -75,11 +75,35 @@
 // Генерация чисел Math.round Math.random
 // const max = 80;
 // const min = 20;
-// const result = Math.round(Math.random() * (max - min) + min);
-// console.log(result);
+    // const result = Math.round(Math.random() * (max - min) + min);
+    // console.log(result);
 // (Math.random() * (max - min) + min);
 
 // length длина строки
-const message = 'В этой строке 26 символов';
-console.log(message.length);
+    // const message = 'В этой строке 26 символов';
+    // console.log(message.length);
 
+
+// Конкатенация строк
+// const firstName = 'Chelsy';
+// const lastName = 'Emerald';
+    // const fullName = firstName + ' ' + lastName;
+    // console.log(fullName);
+
+
+// Гость  х у поселяется  в z номер q 
+    // const room = 716;
+    // const type = 'VIP';
+    // const welcomeMsg = 'Гость ' + firstName + ' поселяется в ' + type + ' номер ' + room;
+
+// const welcomeMsg = `Гость ${firstName} ${lastName} поселяется в ${type} номер ${room}`;
+// console.log(welcomeMsg);
+
+
+// строки template strings
+    // const quantity = 5;
+    // const orderMsg = `Вы заказываете ${quantity} холодильников`;
+    // console.log(orderMsg);
+
+
+    // 
