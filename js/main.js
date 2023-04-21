@@ -106,4 +106,105 @@
     // console.log(orderMsg);
 
 
-    // 
+// нормализация с методом toLowerCase()
+    //    let brand = 'SamsUng';
+    //    brand = brand.toLowerCase();
+    //    console.log(brand);
+
+
+//Поиск в строке includes()
+    // const blacklistedWord1 = 'спам';
+    // const blacklistedWord2 = 'распродажа';
+
+    // const string1 = 'Привет, я принц Абдул, єто не спам, предлагаю тебе миллион';
+    // const string2 = 'Самая большая РАСПРОДАЖА этой недели, не пропустите';
+    // const string3 = ' Рекламная компания #fatlivesmatter';
+
+    // console.log(string1.includes(blacklistedWord1));
+    // console.log(string1.includes(blacklistedWord2));
+
+    // console.log(string2.includes(blacklistedWord1));
+
+    // const normalizedString2 = string2.toLowerCase();
+    // console.log(normalizedString2.includes(blacklistedWord2));
+
+    // console.log(string3.includes(blacklistedWord1));
+    // console.log(string3.includes(blacklistedWord2));
+
+
+// сравнение
+    // console.log(15 < 3);
+
+// преобразование
+    // console.log(10 > 5);
+
+// операторы равенства (== и ===) и неравенства (!= и !==). Всегда используем строгое равенство (===) и неравенство (!==)
+    // const isEqual = 1 === true;
+    // console.log(isEqual);
+
+// && логический оператор 
+    // console.log(5 && 6 && 7 );
+
+// логическое или
+    // console.log( false || 7 || 10 );
+
+// логическое не
+    // console.log(!5);
+
+
+// множественное && ||
+    // const x1 = 10;
+    // const x2 = 30;
+    // const number = 50;
+    // console.log(`Число ${number} попадает в отрезок до ${x1}? `, number < x1);
+    // console.log(`Число ${number} попадает в отрезок до ${x1}? `, number < x2);
+    // const res1 = number > x1 && number < x2;
+    // console.log(`Число ${number} попадает в отрезок от ${x1} lj ${x2}? `, res1);
+
+    // const res2 = number < x1 || number > x2;
+    // console.log(`Число ${number} попадает в отрезок до ${x1} или после ${x2}? `, res2);
+
+
+//пишем чат
+    // const isOnline = true;
+    // const isFriend = true;
+    // const isDnd = true;
+    // const canOpenChat = isOnline && isFriend && !isDnd;
+    // console.log('Можно открить чат? ', canOpenChat);
+
+
+// подписка
+    // const subscription = 'pro';
+    // const canAccessContent = subscription === 'pro' || subscription ==='vip';
+    // console.log('Есть доступ к контенту? ', canAccessContent);
+
+
+// ветвление else 
+    // const salary = 1500;
+    // if (salary < 500) {
+    //     console.log('Уровень 1');
+    // } else if(salary > 500 & salary <= 1500) {
+    //     console.log('Уровень 2');
+    // } else if (salary > 1500 && salary < 3000) {
+    //     console.log('Уровень 3');
+    // } else {
+    //     console.log('Уровень 4');
+    // }
+
+
+// тренарный оператор
+    // const balance = 1000;
+
+    // let message
+    // if (balance >= 0) {
+    //     message = 'Позитивный баланс';
+    // } else {
+    //     message = 'Негативный баланс';
+    // }
+
+    // const message = balance >= 0 ? 'Позитивный баланс' : 'Негативный баланс';
+    // console.log(message);
+
+
+// блочная область
+    // То что вписано внутри, не видно снаружи. То что вписано снаружи, отображается в консоле
