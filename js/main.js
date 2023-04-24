@@ -208,3 +208,116 @@
 
 // блочная область
     // То что вписано внутри, не видно снаружи. То что вписано снаружи, отображается в консоле
+
+
+// кострукция Switch
+    // const stars = 1;
+    // let price;
+
+    // if ( stars === 1) {
+    //     price = 20;
+    // } else if (stars === 2) {
+    //     price = 30;
+    // } else if ( stars === 3) {
+    //     price = 50;
+    // } else {
+    //     console.log('Такого нет');
+    // }
+
+
+    // switch (stars) {
+    // case 1:
+    // price = 20;
+    // break;
+
+    // case 2:
+    // price = 40;
+    // break;
+
+    // default:
+    // console.log('Такого нет');
+    // }
+
+
+    // if ( stars === 1 || stars === 2) {
+    //     price = 20;
+    // } else if (stars === 3 || stars === 4) {
+    //     price = 30;
+    // } else if ( stars === 5) {
+    //     price = 50;
+    // } else {
+    //     console.log("Такого нет");
+    // }
+    // console.log(stars);
+
+
+    //  switch (stars) {
+    // case 1:
+    // case 2:
+    // price = 20;
+    // break;
+
+    // case 3:
+    // case 4:
+    // price = 40;
+    // break;
+
+    // default:
+    // console.log('Такого нет');
+    // }
+
+
+//  цыкл For
+    // for (let i = 0; i < 5; i += 1) {
+    //     console.log(i);
+    // }
+
+
+// Считаем зарплату
+    // const minSalary = 500;
+    // const maxSalary = 5000;
+    // const employees = 4;
+    // const totalSalary = 0;
+
+    // for (let i = 1; i <= employees; i += 1) {
+    //     const salary = Math.round(Math.random() * (maxSalary - minSalary) + minSalary);
+    //     console.log(`Зп работника номер ${i} - ${salary}`);
+
+    //     totalSalary += salary;
+    // }
+    
+    // console.log('totalSalary: ', totalSalary);
+
+// Перебераем счетчик
+    // const min = 6;
+    // const max = 13;
+    // let total = 0
+
+    // for (let i = min; i <= max; i += 1) {
+    //     console.log(i);
+
+    //     if (i % 2 !== 0) {
+    //         console.log(' Не чётное: ', i);
+    //         continue;
+    //     }
+    //     console.log('чётное: ', i);
+    //     total += i;
+    // }
+
+    // console.log('total: ',  total);
+
+
+    // let balance = 10000;
+    // const payment = 2000;
+
+    // console.log(`Общая стоимость заказа ${payment} кредитов. Проверяем кол-во доступных средств на счету`);
+
+    // if ( payment <= balance) {
+    //     console.log('ok');
+    //     balance -= payment;
+    //     console.log('На счету осталось ${balance}');
+    // } else {
+    //     console.log('На счету недостаточно средсв');
+    // }
+
+    // console.log('Операция завершена');
