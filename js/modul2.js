@@ -75,3 +75,69 @@
     // console.log(card);
 
 // Задача: Считаем сумму всех чётных  чисел в массиве.
+    // const numbers = [1, 5, 8, 12, 9, 4, 15, 27, 30, 18, 11];
+    // let total = 0;
+
+    //     // перебрать массив 
+    // for (let i = 0; i < numbers.length; i += 1) {
+    //     const number = numbers[i];
+    //     console.log(number);
+    
+    //     // на каждой итерации проверять элемент на чётность
+    // if (number % 2 === 0) {
+    //     console.log('Чётное!!');
+    //     // если чётное плюсуем к total
+    //     total += number;
+    // }
+    // }
+
+    // console.log('Total: ', total);
+        // или
+    // for (const number of numbers) {
+    //     console.log(number);
+
+    //     if (number % 2 === 0) {
+    //     console.log('Чётное!!');
+    //     // если чётное плюсуем к total
+    //     // total += number;
+    // }
+    // }
+
+    
+// поиск логина
+    // const logins = ['jfgjfnvjfnv', 'dncjkn4jksnac', 'poly1scute', 'tratata12'];
+    // const loginToFind = 'poly1scute';
+    // let message = '';
+
+    // for (let i = 0; i < logins.length; i += 1) {
+    //     const login = logins[i];
+    //     console.log('Login: ', login);
+    //     console.log(`${login} === ${loginToFind}: `, login === loginToFind);
+
+    //     if (login === loginToFind) {
+    //         console.log('Равны');
+    //         message = `Пользователь ${loginToFind} найден`;
+    //         break;
+    //     }
+
+    // }
+     // console.log(message);
+
+            // или декларативный вход(абстракция)
+    // const message = logins.includes(loginToFind)
+    // ? `Пользователь ${loginToFind} найден`
+    // : `Пользователь ${loginToFind} не найден`;
+    //  console.log(message);
+
+
+// выбрать самое маленько число
+    // const numbers = [10, 99, 17, 56, 23, 7, 13, 88, 3, 67];
+    // let smallNumber = numbers[0];
+
+    // for (const number of numbers) {
+    //     if (number < smallNumber){
+    //         smallNumber = number;
+    //     }
+    // }
+
+    // console.log('smallNumber: ', smallNumber);
