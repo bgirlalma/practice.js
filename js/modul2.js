@@ -141,3 +141,95 @@
     // }
 
     // console.log('smallNumber: ', smallNumber);
+
+
+// slice and join
+    // const friends = ["Mango", "Berry", "Blackberry", "Raspberry"];
+    // let string = '';
+    // for (const friend of friends) {
+    //     string += friend + ', ';
+    // }
+
+    // string = string.slice(0, string.length -1);
+        // или
+    // const string = friends.join(', ');
+    // console.log(string);
+
+
+//изменение размера шрифта
+    // const string = 'JavaScript';
+    // const letters = string.split('');
+    // let invertedString = '';
+    // console.log(letters);
+
+    // for (const letter of letters) {
+    //     console.log(letters);
+    
+    // if (letter === letter.toLowerCase()) {
+    //     console.log( 'Эта буква в нижнем регистре -', letter);
+
+    //     invertedString += letter.toUpperCase();
+    // } else {
+    //     console.log('Эта буква в верхнем регистре -', letter);
+    //     invertedString += letter.toLowerCase();
+    // }
+
+    // const isEqual = letter === letter.toLowerCase();
+    // invertedString += isEqual ? letter.toUpperCase() : letter.toLowerCase();
+    // }
+    // console.log(invertedString);
+
+
+// задача на slug и вызовы
+    // const title = 'Top 10 benefits of React framework';
+            // 1 var
+    // const normalazedTitle = title.toLowerCase();
+    // const words = normalazedTitle.split(' ');
+    // const slug = words.join('-');
+    // console.log(slug);
+            //  2 var
+    // const slug1 = title.toLowerCase().split(' ').join('-');
+    // console.log(slug1);
+
+
+// Concat and for of
+    // const array1 = [5, 7, 10, 3];
+    // const array2 = [9, 2, 8, 4];
+    // let total = 0;
+
+    // const numbers = array1.concat(array2);
+    // for (const number of numbers) {
+    //     total += number;
+    // }
+
+    // console.log(total);
+
+
+// удаление по индексу indexOff
+    // const cards = [
+    //     "Карточка-1",
+    //     "Карточка-2",
+    //     "Карточка-3",
+    //     "Карточка-4",
+    //     "Карточка-5"
+    // ]
+    // const cardToRemove = 'Карточка-3';
+    // const index = cards.indexOf(cardToRemove);
+    // console.log(index);
+
+    // cards.splice(index, 1);
+    // console.table(cards);
+
+        // добавление по индексу
+    // const cardToInsert = "Карточка-6";
+    // const index = 3;
+    // cards.splice(index, 0, cardToInsert);
+    // console.table(cards);
+
+        // обновление по индексу
+    // const cardToUpdate = "Карточка-4";
+    // const index = cards.indexOf(cardToUpdate);
+    // console.log(index);
+
+    // cards.splice(index, 1, 'Обновленная карточка-4');
+    // console.table(cards);
