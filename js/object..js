@@ -260,77 +260,77 @@
 
 
 // Задача корзина товара
-    const cart = {
-        items: [],
-        getItems() {
-            return this.items;
-        },
-        add (product) {
-            console.table(this.items);
+    // const cart = {
+    //     items: [],
+    //     getItems() {
+    //         return this.items;
+    //     },
+    //     add (product) {
+    //         console.table(this.items);
 
-            for (const item of this.items) {
+    //         for (const item of this.items) {
                 
-                if (item.name === product.name) {
-                   item.quantity += 1;
-                   return;
-                }
-            }
+    //             if (item.name === product.name) {
+    //                item.quantity += 1;
+    //                return;
+    //             }
+    //         }
 
-            const newProduct = {
-                ...product,
-                quantity: 1,
-            };
+    //         const newProduct = {
+    //             ...product,
+    //             quantity: 1,
+    //         };
 
-            this.items.push(newProduct);
-        },
-        remove(productName) {
-            const { items } = this;
+    //         this.items.push(newProduct);
+    //     },
+    //     remove(productName) {
+    //         const { items } = this;
 
-            for (let i = 0; i < items.length; i += 1) {
-                const { name } = items[i];
+    //         for (let i = 0; i < items.length; i += 1) {
+    //             const { name } = items[i];
 
-                if (productName === name) {
-                    console.log('Нашли такой продукт', productName);
-                    console.log(i);
+    //             if (productName === name) {
+    //                 console.log('Нашли такой продукт', productName);
+    //                 console.log(i);
 
-                    items.splice(i, 1);
-                }
-            }
-        },
-        clear () {
-            this.items = [];
-        },
-        countTotalPrice () {
-            const { items } = this;
-            let total = 0;
+    //                 items.splice(i, 1);
+    //             }
+    //         }
+    //     },
+    //     clear () {
+    //         this.items = [];
+    //     },
+    //     countTotalPrice () {
+    //         const { items } = this;
+    //         let total = 0;
 
-            for (let { price, quantity } of items) {
-                total += price * quantity;
-            }
+    //         for (let { price, quantity } of items) {
+    //             total += price * quantity;
+    //         }
 
-            return total;
-        },
-        increaseQuantity (productName) {},
-        decreaseQuantity (productName) {},
-    };
+    //         return total;
+    //     },
+    //     increaseQuantity (productName) {},
+    //     decreaseQuantity (productName) {},
+    // };
 
-    console.table(cart.getItems());
+    // console.table(cart.getItems());
 
-    cart.add({name: "apple", price: 50});
-    cart.add({name: "lemon", price: 60});
-    cart.add({name: "lemon", price: 60});
-    cart.add({name: 'lime', price: 70});
-    cart.add({name: 'strawberry', price: 110});
-    cart.add({name: 'strawberry', price: 110});
-    cart.add({name: 'strawberry', price: 110});
+    // cart.add({name: "apple", price: 50});
+    // cart.add({name: "lemon", price: 60});
+    // cart.add({name: "lemon", price: 60});
+    // cart.add({name: 'lime', price: 70});
+    // cart.add({name: 'strawberry', price: 110});
+    // cart.add({name: 'strawberry', price: 110});
+    // cart.add({name: 'strawberry', price: 110});
 
    
-    console.table(cart.getItems());
+    // console.table(cart.getItems());
 
-    console.log('Total', cart.countTotalPrice());
+    // console.log('Total', cart.countTotalPrice());
 
-    cart.remove("lemon");
-    console.table(cart.getItems());
+    // cart.remove("lemon");
+    // console.table(cart.getItems());
 
     
 // Распыление spread
@@ -498,3 +498,32 @@
     // };
 
     // showProfileIntro(profile);
+
+
+    const products = [
+        { name: "Radar", price: 1300, quantity: 4 },
+        { name: "Scanner", price: 2700, quantity: 3 },
+        { name: "Droid", price: 400, quantity: 7 },
+        { name: "Grip", price: 1200, quantity: 9 },
+      ];
+      
+      console.log(products);
+
+      function calculateTotalPrice(productName) {
+        // Пиши код ниже этой строки
+      let totalPrice = 0;
+      
+        for (let i = 0; i < products.length; i += 1) {
+            console.log(products.length)
+         if (productName === products.price[i] * products.quantity) {
+          
+            totalPrice += productName
+
+         } 
+         
+        }
+      
+        // Пиши код выше этой строки
+        return totalPrice;
+      }
+      
