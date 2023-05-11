@@ -117,3 +117,96 @@
 
     // const r3 = filter(fruits, getFruitsWithQuantity);
     // console.log(r3);
+
+
+// Функция может возвращать результаттом работы другую функцию
+    // const fnA = function (parameter) {
+    //     const innerVariable = 'значение внутреней переменной FnA';
+
+    //     const innerFunction = function () {
+    //         console.log(parameter);
+    //         console.log(innerVariable);
+    //         console.log('это вызов innerFunction');
+    //     };
+
+    //     return innerFunction;
+    // };
+
+    // const fnB = fnA(555);
+    // fnB();
+    // console.log(fnB);
+
+
+// Имя шефа и блюдо
+    const makeDish = function (sheffname, dish) {
+        console.log(`${sheffname} готовит ${dish}`);
+    };
+
+    // makeDish('Манго', 'пирожок');
+    // makeDish('Манго', 'десерт');
+    // makeDish('Манго', 'чай');
+
+    // makeDish('Poly', 'борщ');
+    // makeDish('Poly', 'кашу');
+    // makeDish('Poly', 'кофе');
+
+    // const makeSheff = function (name) {
+    //     const makeDish = function (dish) {
+    //         console.log(`${name} готовит ${dish}`);
+    //     };
+
+    //     return makeDish;
+    // };
+
+    // const Mango = makeSheff('Mango');
+    // const Poly = makeSheff('Poly');
+
+    // Mango('борщ');
+    // Mango('тост с сыром');
+    // Poly('чай');
+
+
+// Округлятор
+    // const floatingPoint = 3.678905;
+    // const someInt = Math.round(floatingPoint);
+    // const withDesimals = number(floatingPoint.toFixed(2));
+
+    const rounder = function (places) {
+        return function(number) {
+            return Number(number.toFixed(places));
+        };
+    };
+
+    const rounder2 = rounder(2);
+    const rounder3 = rounder(3);
+
+    console.log(rounder2(3.5895));
+    console.log(rounder3(5.95474));
+    console.log(rounder2(8.9463));
+    console.log(rounder3(1.387474));
+    console.log(rounder2(2.03836));
+    console.log(rounder3(7.276373));
+
+
+// Приватные данные и функции
+    const salaryManadgerFactory = function(employeeName, baseSalary){
+        let salary = baseSalary;
+
+        const changeBye = function (amount) {
+            salary += amount;
+        };
+
+        return {
+            raise(amount) {
+                changeBye(amount);
+            },
+            lower(amount) {
+                changeBye(amount);
+            },
+            current() {
+                return `Текущая зарплата ${employeeName} - ${salary}`;
+            },
+        };
+    };
+
+    
