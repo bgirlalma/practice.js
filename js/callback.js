@@ -167,46 +167,92 @@
 
 
 // Округлятор
-    // const floatingPoint = 3.678905;
-    // const someInt = Math.round(floatingPoint);
-    // const withDesimals = number(floatingPoint.toFixed(2));
+    // const rounder = function (places) {
+    //     return function(number) {
+    //         return Number(number.toFixed(places));
+    //     };
+    // };
 
-    const rounder = function (places) {
-        return function(number) {
-            return Number(number.toFixed(places));
-        };
-    };
+    // const rounder2 = rounder(2);
+    // const rounder3 = rounder(3);
 
-    const rounder2 = rounder(2);
-    const rounder3 = rounder(3);
-
-    console.log(rounder2(3.5895));
-    console.log(rounder3(5.95474));
-    console.log(rounder2(8.9463));
-    console.log(rounder3(1.387474));
-    console.log(rounder2(2.03836));
-    console.log(rounder3(7.276373));
+    // console.log(rounder2(3.5895));
+    // console.log(rounder3(5.95474));
+    // console.log(rounder2(8.9463));
+    // console.log(rounder3(1.387474));
+    // console.log(rounder2(2.03836));
+    // console.log(rounder3(7.276373));
 
 
 // Приватные данные и функции
-    const salaryManadgerFactory = function(employeeName, baseSalary){
-        let salary = baseSalary;
+    // const salaryManadgerFactory = function(employeeName, baseSalary){
+    //     let salary = baseSalary;
 
-        const changeBye = function (amount) {
-            salary += amount;
-        };
+    //     const changeBye = function (amount) {
+    //         salary += amount;
+    //     };
 
-        return {
-            raise(amount) {
-                changeBye(amount);
-            },
-            lower(amount) {
-                changeBye(amount);
-            },
-            current() {
-                return `Текущая зарплата ${employeeName} - ${salary}`;
-            },
-        };
-    };
+    //     return {
+    //         raise(amount) {
+    //             changeBye(amount);
+    //         },
+    //         lower(amount) {
+    //             changeBye(amount);
+    //         },
+    //         current() {
+    //             return `Текущая зарплата ${employeeName} - ${salary}`;
+    //         },
+    //     };
+    // };
 
-    
+
+    // 
+    // const myLibFactory = function () {
+    //     let value = 0;
+
+    //     const add = function (num) {
+    //         value += num;
+    //     };
+
+    //     return {add: add,
+
+    //     getValue () {
+    //         return value;
+    //     },
+    // };
+
+    // };
+
+    // const myLib = myLibFactory ();
+    // console.dir(myLib.getValue);
+    // console.log(myLib);
+    // console.log(myLib.getValue());
+    // myLib.add(10);
+    //  console.log(myLib.getValue());
+
+
+// Стрелочные функции
+    // const add = function (a, b, c) {
+    //     console.log(arguments)
+    //     return a + b + c;
+    // };
+
+    // const addArrow = (a, b, c) => {
+    //     return a + b + c;
+    // };
+
+    // console.log(add(5, 10, 15));
+    // console.log(addArrow(7, 33, 12));
+
+
+    // 
+
+    // const fnA  = function() {
+    // return {
+    //     a: 5,
+    // };
+    // };
+    // console.log(fnA());
+
+    // const arrowFnA = () => ({ arrowA: 5});
+    // console.log(arrowFnA());
